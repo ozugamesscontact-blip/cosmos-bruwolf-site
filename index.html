@@ -1735,10 +1735,10 @@
   // ou à l'extérieur.
   // ============================================================
   const RESULTS = [
-    { date:'Samedi 11 juillet', home:'Cosmos Bruwolf', away:'FC Adversaire', scoreHome:3, scoreAway:1 },
-    { date:'Samedi 4 juillet',  home:'Royal United',    away:'Cosmos Bruwolf', scoreHome:2, scoreAway:2 },
-    { date:'Samedi 27 juin',    home:'Cosmos Bruwolf', away:'Étoile FC',      scoreHome:1, scoreAway:2 },
-    { date:'Samedi 20 juin',    home:'Sporting Val',    away:'Cosmos Bruwolf', scoreHome:0, scoreAway:3 },
+    { date:'Samedi 22 août', home:'Deaf Brussels FC', away:'Cosmos Bruwolf', scoreHome:, scoreAway: },
+    { date:'Samedi 29 août', home:'Blue Thrills', away:'Cosmos Bruwolf', scoreHome:, scoreAway: },
+    { date:'Samedi 05 septembre', home:'Cosmos Bruwolf', away:'Picardie AS', scoreHome:, scoreAway: },
+    { date:'Samedi 12 septembre', home:'Cosmos Bruwolf', away:'Tiekss Wemmel', scoreHome:, scoreAway: },
   ];
 
   function renderResults(){
@@ -1774,14 +1774,20 @@
   renderResults();
 
   const STANDINGS = [
-    { pos:1, team:'AS Vermont',      played:8, won:6, drawn:1, lost:1, gf:22, ga:9,  pts:19, us:false },
-    { pos:2, team:'Racing Nord',     played:8, won:5, drawn:2, lost:1, gf:18, ga:10, pts:17, us:false },
-    { pos:3, team:'Cosmos Bruwolf',  played:8, won:5, drawn:1, lost:2, gf:19, ga:12, pts:16, us:true  },
-    { pos:4, team:'Sporting Val',    played:8, won:4, drawn:2, lost:2, gf:15, ga:13, pts:14, us:false },
-    { pos:5, team:'Union Forest',    played:8, won:3, drawn:2, lost:3, gf:14, ga:14, pts:11, us:false },
-    { pos:6, team:'Étoile FC',       played:8, won:2, drawn:3, lost:3, gf:11, ga:15, pts:9,  us:false },
-    { pos:7, team:'FC Bruyère',      played:8, won:1, drawn:2, lost:5, gf:9,  ga:19, pts:5,  us:false },
-    { pos:8, team:'CS Montfort',     played:8, won:0, drawn:1, lost:7, gf:6,  ga:22, pts:1,  us:false },
+    { pos:1, team:'Blue Thrills',      played:0, won:0, drawn:0, lost:0, gf:0, ga:0,  pts:0, us:false },
+    { pos:2, team:'Friends Spirit AUD',     played:0, won:0, drawn:0, lost:0, gf:0, ga:0,  pts:0, us:false },
+    { pos:3, team:'Cosmos Bruwolf',  played:0, won:0, drawn:0, lost:0, gf:0, ga:0,  pts:0, us:true  },
+    { pos:4, team:'Watermael FC',    played:0, won:0, drawn:0, lost:0, gf:0, ga:0,  pts:0, us:false },
+    { pos:5, team:'Tiekss Wemmel',    played:0, won:0, drawn:0, lost:0, gf:0, ga:0,  pts:0, us:false },
+    { pos:6, team:'Bleu-Blanc',       played:0, won:0, drawn:0, lost:0, gf:0, ga:0,  pts:0,  us:false },
+    { pos:7, team:'String Penelope',      played:0, won:0, drawn:0, lost:0, gf:0, ga:0,  pts:0,  us:false },
+    { pos:8, team:'Sanserif FC',     played:0, won:0, drawn:0, lost:0, gf:0, ga:0,  pts:0,  us:false },
+    { pos:9, team:'Cornac United FC',     played:0, won:0, drawn:0, lost:0, gf:0, ga:0,  pts:0,  us:false },
+    { pos:10, team:'Neptune FC',     played:0, won:0, drawn:0, lost:0, gf:0, ga:0,  pts:0,  us:false },
+    { pos:11, team:'Brussels LTC',     played:0, won:0, drawn:0, lost:0, gf:0, ga:0,  pts:0,  us:false },
+    { pos:12, team:'Zijp FC',     played:0, won:0, drawn:0, lost:0, gf:0, ga:0,  pts:0,  us:false },
+    { pos:13, team:'Azur RCS',     played:0, won:0, drawn:0, lost:0, gf:0, ga:0,  pts:0,  us:false },
+    { pos:14, team:'Picardie AS',     played:0, won:0, drawn:0, lost:0, gf:0, ga:0,  pts:0,  us:false },
   ];
 
   // ============================================================
@@ -1864,7 +1870,32 @@
   // ============================================================
   const MATCHES = [
     { day:'Samedi', date:'22', month:'Août 2026', home:'Deaf Brussels FC', away:'Cosmos Bruwolf', time:'15:30', venue:'away', next:true },
-    { day:'', date:'', month:'', home:'', away:'', time:'', venue:'' },
+    { day:'Samedi', date:'29', month:'Août 2026', home:'Blue Thrills', away:'Cosmos Bruwolf', time:'15:30', venue:'away' },
+    { day:'Samedi', date:'05', month:'Septembre 2026', home:'Cosmos Bruwolf', away:'Picardie AS', time:'15:30', venue:'home' },
+    { day:'Samedi', date:'12', month:'Septembre 2026', home:'Cosmos Bruwolf', away:'Tiekss Wemmel', time:'15:30', venue:'home' },
+    { day:'Samedi', date:'19', month:'Septembre 2026', home:'String Penelope', away:'Cosmos Bruwolf', time:'12:30', venue:'away' },
+    { day:'Samedi', date:'26', month:'Septembre 2026', home:'Cosmos Bruwolf', away:'Cornac United FC', time:'15:30', venue:'home' },
+    { day:'Samedi', date:'03', month:'Octobre 2026', home:'Brussels LTC', away:'Cosmos Bruwolf', time:'12:30', venue:'away' },
+    { day:'Samedi', date:'10', month:'Octobre 2026', home:'Cosmos Bruwolf', away:'Azur RCS', time:'15:30', venue:'home' },
+    { day:'Samedi', date:'17', month:'Octobre 2026', home:'Friends Spirit AUD', away:'Cosmos Bruwolf', time:'12:30', venue:'away' },
+    { day:'Samedi', date:'24', month:'Octobre 2026', home:'Cosmos Bruwolf', away:'Watermael FC', time:'15:30', venue:'home' },
+    { day:'Samedi', date:'31', month:'Octobre 2026', home:'Bleu-Blanc', away:'Cosmof Bruwolf', time:'15:30', venue:'away' },
+    { day:'Samedi', date:'07', month:'Novembre 2026', home:'Cosmos Bruwolf', away:'Sanserif FC', time:'15:30', venue:'home' },
+    { day:'Samedi', date:'14', month:'Novembre 2026', home:'Neptune FC', away:'Cosmos Bruwolf', time:'15:30', venue:'away' },
+    { day:'Samedi', date:'21', month:'Novembre 2026', home:'Cosmos Bruwolf', away:'Zijp FC', time:'15:30', venue:'home' },
+    { day:'Samedi', date:'28', month:'Novembre 2026', home:'Cosmos Bruwolf', away:'Blue Thrills', time:'15:30', venue:'home' },
+    { day:'Samedi', date:'05', month:'Décembre 2026', home:'Picardie AS', away:'Cosmos Bruwolf', time:'13:30', venue:'away' },
+    { day:'Samedi', date:'12', month:'Décembre 2026', home:'Tiekss Wemmel', away:'Cosmos Bruwolf', time:'14:45', venue:'away' },
+    { day:'Samedi', date:'09', month:'Janvier 2027', home:'Cosmos Bruwolf', away:'String Penelope', time:'15:30', venue:'home' },
+    { day:'Samedi', date:'16', month:'Janvier 2027', home:'Cornac United FC', away:'Cosmos Bruwolf', time:'14:00', venue:'away' },
+    { day:'Samedi', date:'23', month:'Janvier 2027', home:'Cosmos Bruwolf', away:'Brussels LTC', time:'15:30', venue:'home' },
+    { day:'Samedi', date:'30', month:'Janvier 2027', home:'Azur RCS', away:'Cosmos Bruwolf', time:'12:00', venue:'away' },
+    { day:'Samedi', date:'06', month:'Février 2027', home:'Cosmos Bruwolf', away:'Friends Spirit AUD', time:'15:30', venue:'home' },
+    { day:'Samedi', date:'13', month:'Février 2027', home:'Watermael FC', away:'Cosmos Bruwolf', time:'12:30', venue:'away' },
+    { day:'Samedi', date:'20', month:'Février 2027', home:'Cosmos Bruwolf', away:'Bleu-Blanc', time:'15:30', venue:'home' },
+    { day:'Samedi', date:'27', month:'Février 2027', home:'Sanserif FC', away:'Cosmos Bruwolf', time:'11:00', venue:'away' },
+    { day:'Samedi', date:'06', month:'Mars 2027', home:'Cosmos Bruwolf', away:'Neptune FC', time:'15:30', venue:'home' },
+    { day:'Samedi', date:'13', month:'Mars 2027', home:'Zijp FC', away:'Cosmos Bruwolf', time:'15:30', venue:'away' },
   ];
 
   // ---------- Export .ics du prochain match ----------
