@@ -1735,8 +1735,17 @@
   // ou à l'extérieur.
   // ============================================================
   const RESULTS = [
-    //{ date:'Samedi 22 août', home:'Deaf Brussels FC', away:'Cosmos Bruwolf', scoreHome:1, scoreAway:3 },
+    // Exemple — remplace ou supprime cette ligne :
+    // { date:'Samedi 22 août', home:'Deaf Brussels FC', away:'Cosmos Bruwolf', scoreHome:1, scoreAway:3, scorers:['Francis', 'Dylan', 'Francis'] },
   ];
+
+  function formatScorers(scorers){
+    if (!scorers || !scorers.length) return '';
+    const counts = {};
+    scorers.forEach(name => { counts[name] = (counts[name] || 0) + 1; });
+    const parts = Object.entries(counts).map(([name, n]) => n > 1 ? `${name} (x${n})` : name);
+    return parts.join(', ');
+  }
 
   function renderResults(){
     const list = document.getElementById('resultsList');
